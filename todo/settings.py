@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'to-do-stream-3-aysekubrakupeli.c9users.io',
-    'aysekubrakupeli-todoapp.herokuapp.com/'
+    'aysekubrakupeli-todoapp.herokuapp.com',
     ]
 
 

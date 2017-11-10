@@ -13,9 +13,9 @@
            {% for item in items %}
            <tr>
                {% if item.done %}
-               <td><strike>{{ item.name }}</strike></td>
+               <td><strike>{{ item.name }} ({{ item.priority }})</strike></td>
                {% else %}
-               <td>{{ item.name }}</td>
+               <td>{{ item.name }} ({{ item.priority }})</td>
                {% endif %}
                
                <td>
@@ -31,5 +31,8 @@
            {% endfor %}
     
        </table>
+       
+       <hr>
+       <a href="https://to-do-stream-3-aysekubrakupeli.c9users.io/add">Add an item</a>
 </body>
 </html>

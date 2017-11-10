@@ -26,7 +26,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'to-do-stream-3-aysekubrakupeli.c9users.io'
+    'to-do-stream-3-aysekubrakupeli.c9users.io',
+    'aysekubrakupeli-todoapp.herokuapp.com/'
     ]
 
 

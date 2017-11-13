@@ -8,12 +8,10 @@ class TestViews(TestCase):
         self.assertEqual(page.status_code, 200)
         self.assertTemplateUsed(page, "index.html")
 
-
     def test_get_add_item_page(self):
         page = self.client.get('/add')
         self.assertEqual(page.status_code, 200)
         self.assertTemplateUsed(page, "item_form.html")
-
 
     def test_get_edit_item_page(self):
         item = TodoItem(name='An Item')
@@ -55,3 +53,14 @@ class TestViews(TestCase):
         self.assertEqual(item.done, True)
         
         self.assertEqual(response.status_code, 302)
+ 
+ 
+ 
+#  Login Page test not working
+    
+    # def test_login_page(self):
+    #     page = self.client.get('/login')
+    #     self.assertEqual(page.status_code, 200)
+    #     self.assertTemplateUsed(page, "login.html")
+    
+    

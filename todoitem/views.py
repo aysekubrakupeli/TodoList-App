@@ -47,4 +47,5 @@ def toggle_status(request, id):
    return redirect(get_index)
 
 def log_in(request):
-    return render(request, "login.html")
+    results = TodoItem.objects.all()
+    return render(request, "login.html", {'items': results})

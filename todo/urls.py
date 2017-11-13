@@ -24,5 +24,5 @@ urlpatterns = [
     url(r'^add$', get_item_form),
     url(r'^edit/(\d+)$', edit_item),
     url(r'^toggle/(\d+)$', toggle_status),
-    url(r'^login/', log_in)
+    url(r'^login/', log_in),
 ]
